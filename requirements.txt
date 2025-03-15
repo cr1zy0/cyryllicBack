@@ -1,0 +1,8 @@
+Flask
+flask-cors
+torch
+torchvision
+Pillow
+numpy
+gunicorn
+uvicorn
