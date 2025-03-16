@@ -31,6 +31,9 @@ transform = transforms.Compose([
     transforms.Resize((224, 224)),  # Подгоняем под размер модели
     transforms.ToTensor(),
 ])
+@app.route("/", methods=["GET"])
+def ping():
+    return "Server is active!", 200
 
 @app.route("/")
 def home():
